@@ -1,0 +1,134 @@
+/* linear-gradient(to right, #3796df, #0a9ec4); */
+nav {
+  font-family: "Yekan";
+  background: transparent;
+  height: 80px;
+  display: block;
+  z-index: 99999;
+}
+/* logo */
+.logo {
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+}
+img {
+  margin-left: 2rem;
+}
+.responsive-menu {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* Link website */
+.navlink {
+  margin-right: -10rem;
+  margin-top: 0.5rem;
+}
+.Link {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  margin: 1rem;
+  display: inline-block;
+}
+.Link::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background: #be0e0e;
+  transition: width 0.3s ease-in;
+  margin-top: 1rem;
+}
+.Link:hover {
+  color: #c9c9c9;
+}
+.Link:hover::after {
+  width: 100%;
+  transition: width 0.3s ease-in;
+}
+/* button website */
+.button {
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.button-enter {
+  border-radius: 2rem;
+  color: #ffffff;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  background: #095497;
+  border: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.button-enter:hover {
+  border: 2px solid #095497;
+  background: #519fe2;
+}
+.enter {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+.button-special {
+  border-radius: 2rem;
+  color: #ffffff;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  background: #db9a33;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.button-special:hover {
+  border: 2px solid #db9a33;
+  background: #ebc68c;
+}
+.special {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 400px) {
+  .responsive-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    height: 100vh;
+    background: #3796df;
+    z-index: 9999;
+  }
+  /* link responsive */
+  .navlink {
+    margin-right: 0.5rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .Link:hover {
+    color: black;
+  }
+  .Link:hover::after {
+    width: 0%;
+  }
+  /* button responsive */
+  .button {
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .button-enter {
+    margin-bottom: 1rem;
+    width: 180px;
+  }
+  .button-special {
+    width: 180px;
+  }
+}
