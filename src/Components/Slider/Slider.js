@@ -7,19 +7,30 @@ const Slider = () => {
     <div className="container">
       {/* navbar */}
       <Navbar />
-      {/* title button and downloads in slider */}
+      {/* title website */}
       <div className="slider-container">
         <div className="title-slider">
           <h1>به راحتی از مرز ها عبور کنید</h1>
         </div>
+        {/* button download */}
         <div className="button-download">
           <button type="button">همین الان دانلود کنید</button>
         </div>
+        {/* image download */}
         <div className="img-downloads">
-          <img src="/images/appstore.png" alt="appstore" />
-          <img src="/images/googleplay.png" alt="googleplay" />
-          <img src="/images/mac.png" alt="mac" />
-          <img src="/images/windows.png" alt="windows" />
+          <a href="#">
+            <img src="/images/appstore.png" alt="appstore" />
+          </a>
+          <a href="#">
+            <img src="/images/googleplay.png" alt="googleplay" />
+          </a>
+          <a href="#">
+            <img src="/images/mac.png" alt="mac" />
+          </a>
+
+          <a href="#">
+            <img src="/images/windows.png" alt="windows" />
+          </a>
         </div>
       </div>
     </div>

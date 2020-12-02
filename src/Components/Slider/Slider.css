@@ -1,6 +1,6 @@
 /* main slider */
 .container {
-  background: url('../image/bg.jpg') center center/cover no-repeat ;
+  background: url("../image/bg.jpg") center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   font-family: "Yekan";
@@ -11,15 +11,17 @@
   justify-content: center;
   align-items: center;
 }
+/* title */
 .title-slider h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
   color: white;
   margin-top: 8rem;
 }
+/* button download */
 .button-download {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .button-download button {
   outline: none;
@@ -27,25 +29,44 @@
   border-radius: 2rem;
   background: #095497;
   color: white;
-  width: 520px;
-  height: 90px;
-  font-size: 3rem;
+  width: 300px;
+  height: 50px;
+  font-size: 1.5rem;
   transition: 0.5s ease-in-out;
 }
 .button-download button:hover {
   border: 2px solid #659fd1;
   background: rgb(11, 43, 71);
 }
+/* image download */
 .img-downloads {
   position: absolute;
   bottom: 2rem;
   right: 30rem;
 }
-@media screen and (max-width:400px){
-  .title-slider h1{
-    display: none;
+/* responsive website */
+@media screen and (max-width: 400px) {
+  .title-slider h1 {
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 8rem;
   }
-  .button-download button{
-    display:none;
+  .button-download button {
+    width: 60%;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .button-download {
+    margin-top: 0;
+  }
+  .img-downloads {
+    display: flex;
+    bottom: 2rem;
+    right: 1rem;
+   
+  }
+  .img-downloads img {
+   width: 80%;
+   margin-left: 1rem;
   }
 }
