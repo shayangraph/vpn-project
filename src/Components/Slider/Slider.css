@@ -33,6 +33,7 @@
   height: 50px;
   font-size: 1.5rem;
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 .button-download button:hover {
   border: 2px solid #659fd1;
@@ -42,7 +43,10 @@
 .img-downloads {
   position: absolute;
   bottom: 2rem;
-  right: 30rem;
+  right: 35rem;
+}
+.img-downloads img{
+  margin-left: 1rem;
 }
 /* responsive website */
 @media screen and (max-width: 400px) {
@@ -70,3 +74,29 @@
    margin-left: 1rem;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 401px)  {
+  .title-slider h1 {
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
+  .button-download button {
+    width: 60%;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .button-download {
+    margin-top: 0;
+  }
+  .img-downloads {
+    display: flex;
+    bottom: 2rem;
+    right: 1rem;
+   
+  }
+  .img-downloads img {
+   width: 80%;
+   margin-left: 1rem;
+  }
+}
+

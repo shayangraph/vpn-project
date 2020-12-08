@@ -1,4 +1,6 @@
+//import
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Slider.css";
 
@@ -14,23 +16,23 @@ const Slider = () => {
         </div>
         {/* button download */}
         <div className="button-download">
-          <button type="button">همین الان دانلود کنید</button>
+          <Link to='/'><button type="button">همین الان دانلود کنید</button></Link>
+          
         </div>
         {/* image download */}
         <div className="img-downloads">
-          <a href="#">
+          <Link to="/">
             <img src="/images/appstore.png" alt="appstore" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <img src="/images/googleplay.png" alt="googleplay" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <img src="/images/mac.png" alt="mac" />
-          </a>
-
-          <a href="#">
+          </Link>
+          <Link to="/">
             <img src="/images/windows.png" alt="windows" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

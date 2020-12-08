@@ -1,0 +1,132 @@
+.container-footer {
+  width: 100%;
+  margin-top: 10%;
+  font-family: "Yekan";
+}
+.footer-top {
+  margin: 2rem 0 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.services {
+  margin-right: 20rem;
+}
+.services h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2b98fb;
+}
+.services ul {
+  line-height: 2rem;
+  list-style: disc;
+}
+.services ul li {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.services ul li:hover {
+  color: #b8b8b8;
+}
+.about h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2b98fb;
+}
+.about p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.social-media {
+  margin-right: 10rem;
+}
+.social-media h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2b98fb;
+}
+.social-media .images-footer {
+  display: grid;
+  grid-template-columns: 70px 70px;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.youtube {
+  margin-top: 0.2rem;
+}
+.copyright {
+  text-align: center;
+  width: 80%;
+  margin: 0 10rem;
+  display: inline-block;
+}
+.copyright::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #bdbdbd;
+}
+.children-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+.para {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+.eyes {
+  color: red;
+}
+/* responsive navbar  mobile*/
+@media screen and (max-width: 400px) {
+  .footer-top {
+    display: block;
+  }
+  .services {
+    margin-right: 9rem;
+  }
+  .about h1 {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .about p {
+    margin: 2rem;
+  }
+  .social-media {
+    margin-right: 6rem;
+  }
+  .social-media .images-footer {
+    margin-right: 2rem;
+  }
+  .copyright {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* responsive navbar  ipad*/
+@media screen and (max-width: 768px) and (min-width: 401px) {
+  .footer-top {
+    grid-template-columns: repeat(3, 40%);
+    margin-top: 20%;
+  }
+  .services {
+    margin-right: 9rem;
+  }
+  .about h1 {
+    text-align: center;
+  }
+  .about p {
+    margin: 2rem;
+  }
+  .social-media {
+    margin-right: 2rem;
+  }
+  .social-media .images-footer {
+    margin-right: 2rem;
+  }
+  .copyright {
+    width: 100%;
+    margin: 0;
+  }
+}

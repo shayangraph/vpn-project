@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import PopUp from '../PopUp/PopUp'
+import PopUp from "../PopUp/PopUp";
 // react icons
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
-
-
 
 const Navbar = () => {
   // menu responsive method
@@ -23,10 +21,22 @@ const Navbar = () => {
   const Handlepopup = () => {
     setPopup(!popup);
   };
+  // change color navbar method
+  const [navbar, setNavbar] = useState(false);
 
+  const changebackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changebackground);
+
+  
   return (
     //Navbar
-    <nav>
+    <nav className={navbar ? "navbar active" : "navbar"}>
       {/* icons bars */}
       <FaBars className="Bars-navbar" onClick={handlemenu} />
 
@@ -49,13 +59,15 @@ const Navbar = () => {
             type="button"
             onClick={Handlepopup}
           >
-            <Link className="special" to="/" >
+            <Link className="special" to="/">
               اشتراک ویژه
             </Link>
             {/* PopUp section */}
-            {
-              popup?null:<PopUp Handlepopup={Handlepopup} popup={popup}/>
-            }
+            {popup ? null : (
+              <div className="background-popup">
+                <PopUp Handlepopup={Handlepopup} popup={popup} />
+              </div>
+            )}
           </button>
         </div>
         {/* Link */}

@@ -1,9 +1,14 @@
+// import 
 import React from "react";
 import { IoCheckbox } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import './PopUp.css'
+import "./PopUp.css";
+
+
+
+
+
 function PopUp(props) {
-  
   return (
     <div className="container-popup">
       <div className="children-popup">
@@ -31,11 +36,13 @@ function PopUp(props) {
           </li>
         </ul>
         <button type="button" onClick={props.Handlepopup}>
-          <Link to="/" className="link-button">خرید آنلاین</Link>
+          <Link to="/" className="link-button">
+            خرید آنلاین
+          </Link>
         </button>
       </div>
       <div className="children-popup">
-        <h1>اکانت عادی</h1>
+        <h1>اکانت پریمیوم</h1>
         <ul>
           <li>
             <IoCheckbox className="icons-popup" color="#2ecc71" />
@@ -59,11 +66,13 @@ function PopUp(props) {
           </li>
         </ul>
         <button type="button" onClick={props.Handlepopup}>
-          <Link to="/" className="link-button">خرید آنلاین</Link>
+          <Link to="/" className="link-button">
+            خرید آنلاین
+          </Link>
         </button>
       </div>
       <div className="children-popup">
-        <h1>اکانت عادی</h1>
+        <h1>اکانت فوق پریمیوم</h1>
         <ul>
           <li>
             <IoCheckbox className="icons-popup" color="#2ecc71" />
@@ -87,11 +96,11 @@ function PopUp(props) {
           </li>
         </ul>
         <button type="button" onClick={props.Handlepopup}>
-          <Link to="/" className="link-button">خرید آنلاین</Link>
+          <Link to="/" className="link-button">
+            خرید آنلاین
+          </Link>
         </button>
       </div>
-
-     
     </div>
   );
 }

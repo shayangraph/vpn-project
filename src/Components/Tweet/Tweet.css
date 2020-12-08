@@ -1,0 +1,151 @@
+.tweet-container {
+  width: 100%;
+  height: 500px;
+  font-family: "Yekan";
+  background: url("./../image/tweetbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  position: relative;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+.title h1 {
+  color: white;
+  font-size: 4rem;
+}
+.tweet {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.tweet1 {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transition: 1s ease-in;
+}
+.tweet1.active{
+  left: 3%;
+display: block;
+}
+.tweet1:hover {
+  top: -10%;
+}
+.tweet2 {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transition: 1s ease-in;
+}
+.tweet2.active{
+  left: 20%;
+}
+.tweet2:hover {
+  top: 150px;
+}
+.tweet3 {
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transition: 1s ease-in;
+}
+.tweet3.active{
+  left: 5%;
+}
+.tweet3:hover {
+  top: 350px;
+}
+/* responsive mobile */
+@media screen and (max-width: 400px) {
+  .tweet-container {
+    height: 400px;
+    flex-direction: column;
+  }
+  .title {
+    margin-right: 1rem;
+    margin-top: 5%;
+  }
+  .title h1 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .tweet img {
+    width: 50%;
+  }
+  .tweet1 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transition: 0.5s ease-in;
+  }
+  .tweet1:hover{
+    top: 15%;
+  }
+  .tweet2 {
+    position: absolute;
+    top: 37%;
+    left: 40%;
+    transition: 0.5s ease-in;
+  }
+  .tweet2:hover{
+    top: 37%;
+  }
+  .tweet3 {
+    position: absolute;
+    top: 57%;
+    left: 20%;
+    transition: 0.5s ease-in;
+  }
+  .tweet3:hover{
+    top: 57%;
+  }
+}
+/* responsive ipad */
+@media screen and (max-width: 768px) and (min-width: 401px) {
+    .tweet-container {
+        
+        flex-direction: column;
+      }
+      .title {
+        margin-right: 1rem;
+        margin-top: 5%;
+      }
+      .title h1 {
+        color: white;
+        font-size: 1.5rem;
+      }
+      .tweet img {
+        width: 50%;
+      }
+      .tweet1 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transition: 0.5s ease-in;
+      }
+      .tweet1:hover{
+        top: 20%;
+      }
+      .tweet2 {
+        position: absolute;
+        top: 55%;
+        left: 40%;
+        transition: 0.5s ease-in;
+      }
+      .tweet2:hover{
+        top: 55%;
+      }
+      .tweet3 {
+        position: absolute;
+        top: 90%;
+        left: 20%;
+        transition: 0.5s ease-in;
+      }
+      .tweet3:hover{
+        top: 90%;
+      }
+}

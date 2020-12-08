@@ -41,8 +41,8 @@
   border-radius: 20px;
   background: #61adf1;
 }
-.icons-popup{
-  margin:0 0 -5px 5px ;
+.icons-popup {
+  margin: 0 0 -5px 5px;
 }
 .link-button {
   text-decoration: none;
@@ -65,7 +65,7 @@
     height: 25vh;
     margin-right: 15px;
   }
-  .children-popup h1{
+  .children-popup h1 {
     font-size: 1rem;
   }
   .children-popup ul {
@@ -74,12 +74,46 @@
     margin-top: 1rem;
     font-size: 0.8rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  .icons-popup{
-    margin:0 0 -3px 5px ;
+  .icons-popup {
+    margin: 0 0 -3px 5px;
   }
-  .children-popup button{
+  .children-popup button {
+    font-size: 1rem;
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 401px) {
+  .container-popup {
+    width: 95%;
+    height: 90vh;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: inherit;
+  }
+  .children-popup {
+    width: 90%;
+    height: 25vh;
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .children-popup ul {
+    width: 100%;
+    line-height: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icons-popup {
+    margin: 0 0 -3px 5px;
+  }
+  .children-popup button {
     font-size: 1rem;
     padding: 10px 40px;
   }
