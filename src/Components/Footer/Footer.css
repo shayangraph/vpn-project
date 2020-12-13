@@ -10,7 +10,7 @@
   justify-content: center;
 }
 .services {
-  margin-right: 20rem;
+  margin-right: 25rem;
 }
 .services h1 {
   font-size: 2rem;
@@ -28,17 +28,41 @@
 .services ul li:hover {
   color: #b8b8b8;
 }
+.about {
+  margin-right: 5rem;
+}
 .about h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #2b98fb;
 }
-.about p {
-  line-height: 1.5rem;
+.group {
+  margin-top: 2rem;
+}
+.group input {
+  width: 20rem;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid #2b98fb;
   font-size: 1rem;
 }
+.group button {
+  border: none;
+  background: #fff;
+  outline: none;
+  font-size: 15px;
+  margin-right: 1rem;
+  background: linear-gradient(90deg, #8f4949, #d61e1e);
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.group button:hover {
+  background: #f86161;
+}
 .social-media {
-  margin-right: 10rem;
+  margin-right: 4rem;
 }
 .social-media h1 {
   font-size: 2rem;
@@ -50,6 +74,7 @@
   grid-template-columns: 70px 70px;
   font-size: 3rem;
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 .youtube {
   margin-top: 0.2rem;
@@ -78,6 +103,7 @@
 .eyes {
   color: red;
 }
+
 /* responsive navbar  mobile*/
 @media screen and (max-width: 400px) {
   .footer-top {
@@ -102,6 +128,14 @@
   .copyright {
     width: 100%;
     margin: 0;
+  }
+  .about h1 {
+    margin-right: -3rem;
+  }
+  .group input {
+    width: 13rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 }
 /* responsive navbar  ipad*/
@@ -128,5 +162,13 @@
   .copyright {
     width: 100%;
     margin: 0;
+  }
+  .group input {
+    width: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .group button {
+    margin-right: 0;
   }
 }

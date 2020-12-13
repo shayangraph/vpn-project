@@ -1,0 +1,210 @@
+.signin-container {
+  font-family: "Yekan";
+  direction: rtl;
+  background: url("./../image/signin.jpg") center center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* box sign in */
+.signin-box2 {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+}
+.signin-box {
+  width: 600px;
+  height: 600px;
+  background: #0a9ec4;
+}
+.signin-box form {
+  margin-top: 8rem;
+}
+.signin-box form h1 {
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.form-inputs {
+  margin: 2rem 2rem 0 0;
+}
+.form-inputs label {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.form-inputs input {
+  border: none;
+  border-radius: 2rem;
+  background: #fff;
+  width: 400px;
+  height: 40px;
+  padding-right: 20px;
+}
+.form-inputs p {
+  margin-top: 1rem;
+  font-size: 12px;
+  margin-right: 1rem;
+  color: #edff47;
+}
+.forgot {
+  color: #444;
+  margin: 1rem 3rem 2rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.signin-box form button {
+  border: none;
+  outline: none;
+  background: #15b62a;
+  color: white;
+  margin-right: 12rem;
+  margin-top: 1rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.signin-box form button:hover {
+  background: #4bda5e;
+  border: 2px solid #04a319;
+}
+/* box sign up */
+.children-box {
+  margin-top: 5rem;
+}
+.signin-box2 h1 {
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: #000000;
+}
+.signin-box2 p {
+  margin: 2rem 2rem 0rem 2rem;
+  line-height: 1.5rem;
+}
+.signin-box2 button {
+  border: 2px solid #0a9ec4;
+  outline: none;
+  background: #fff;
+  margin-right: 8rem;
+  margin-top: 2rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.signin-box2 button:hover {
+  border: none;
+  background: #0a9ec4;
+}
+.sign-in2-link {
+  color: black;
+  text-decoration: none;
+}
+.sign-in2-link:hover {
+  color: white;
+}
+/* responsive website */
+@media screen and (max-width: 400px) {
+  .signin-container {
+    flex-direction: column-reverse;
+  }
+  .signin-box2 {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+  }
+  .signin-box {
+    width: 300px;
+    height: 300px;
+    background: #0a9ec4;
+  }
+
+  .signin-box form {
+    margin-top: 1rem;
+  }
+  .signin-box form h1 {
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+  .form-inputs {
+    margin: 1rem 1rem 0 0;
+  }
+  .form-inputs label {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .form-inputs input {
+    border: none;
+    border-radius: 2rem;
+    background: #fff;
+    width: 250px;
+    height: 30px;
+    padding-right: 20px;
+  }
+  .form-inputs p {
+    margin-top: 5px;
+    font-size: 8px;
+    margin-right: 1rem;
+    color: #edff47;
+  }
+  .forgot {
+    margin: 1rem 2rem 0.5rem 2rem;
+    font-size: 0.75rem;
+  }
+  .signin-box form button {
+    margin-right: 6rem;
+    margin-top: 0;
+    width: 100px;
+    height: 25px;
+    font-size: 1rem;
+  }
+  .signin-box form button:hover {
+    border: 1px solid #04a319;
+  }
+  /* box sign up */
+  .children-box {
+    margin-top: 1rem;
+  }
+  .signin-box2 h1 {
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #000000;
+  }
+  .signin-box2 p {
+    margin: 1rem 1rem 0rem 1rem;
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .signin-box2 button {
+    margin-right: 6rem;
+    margin-top: 1rem;
+    width: 100px;
+    height: 25px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 401px) {
+  .signin-container {
+    flex-direction: column-reverse;
+  }
+  .signin-box {
+    width: 500px;
+    height: 500px;
+    background: #0a9ec4;
+  }
+  .signin-box form {
+    margin-top: 1rem;
+  }
+  .signin-box form button {
+    margin-right: 9rem;
+    margin-top: 1rem;
+  }
+}

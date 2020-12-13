@@ -33,7 +33,6 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changebackground);
 
-  
   return (
     //Navbar
     <nav className={navbar ? "navbar active" : "navbar"}>

@@ -28,9 +28,9 @@
   left: 50%;
   transition: 1s ease-in;
 }
-.tweet1.active{
+.tweet1.active {
   left: 3%;
-display: block;
+  display: block;
 }
 .tweet1:hover {
   top: -10%;
@@ -41,7 +41,7 @@ display: block;
   left: 50%;
   transition: 1s ease-in;
 }
-.tweet2.active{
+.tweet2.active {
   left: 20%;
 }
 .tweet2:hover {
@@ -53,7 +53,7 @@ display: block;
   left: 50%;
   transition: 1s ease-in;
 }
-.tweet3.active{
+.tweet3.active {
   left: 5%;
 }
 .tweet3:hover {
@@ -82,7 +82,7 @@ display: block;
     left: 20%;
     transition: 0.5s ease-in;
   }
-  .tweet1:hover{
+  .tweet1:hover {
     top: 15%;
   }
   .tweet2 {
@@ -91,7 +91,7 @@ display: block;
     left: 40%;
     transition: 0.5s ease-in;
   }
-  .tweet2:hover{
+  .tweet2:hover {
     top: 37%;
   }
   .tweet3 {
@@ -100,52 +100,51 @@ display: block;
     left: 20%;
     transition: 0.5s ease-in;
   }
-  .tweet3:hover{
+  .tweet3:hover {
     top: 57%;
   }
 }
 /* responsive ipad */
 @media screen and (max-width: 768px) and (min-width: 401px) {
-    .tweet-container {
-        
-        flex-direction: column;
-      }
-      .title {
-        margin-right: 1rem;
-        margin-top: 5%;
-      }
-      .title h1 {
-        color: white;
-        font-size: 1.5rem;
-      }
-      .tweet img {
-        width: 50%;
-      }
-      .tweet1 {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        transition: 0.5s ease-in;
-      }
-      .tweet1:hover{
-        top: 20%;
-      }
-      .tweet2 {
-        position: absolute;
-        top: 55%;
-        left: 40%;
-        transition: 0.5s ease-in;
-      }
-      .tweet2:hover{
-        top: 55%;
-      }
-      .tweet3 {
-        position: absolute;
-        top: 90%;
-        left: 20%;
-        transition: 0.5s ease-in;
-      }
-      .tweet3:hover{
-        top: 90%;
-      }
+  .tweet-container {
+    flex-direction: column;
+  }
+  .title {
+    margin-right: 1rem;
+    margin-top: 5%;
+  }
+  .title h1 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .tweet img {
+    width: 50%;
+  }
+  .tweet1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: 0.5s ease-in;
+  }
+  .tweet1:hover {
+    top: 20%;
+  }
+  .tweet2 {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transition: 0.5s ease-in;
+  }
+  .tweet2:hover {
+    top: 55%;
+  }
+  .tweet3 {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transition: 0.5s ease-in;
+  }
+  .tweet3:hover {
+    top: 90%;
+  }
 }

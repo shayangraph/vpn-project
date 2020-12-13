@@ -1,12 +1,8 @@
-// import 
+// import
 import React from "react";
 import { IoCheckbox } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "./PopUp.css";
-
-
-
-
 
 function PopUp(props) {
   return (

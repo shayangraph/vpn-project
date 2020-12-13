@@ -16,8 +16,9 @@ const Slider = () => {
         </div>
         {/* button download */}
         <div className="button-download">
-          <Link to='/'><button type="button">همین الان دانلود کنید</button></Link>
-          
+          <Link to="/">
+            <button type="button">همین الان دانلود کنید</button>
+          </Link>
         </div>
         {/* image download */}
         <div className="img-downloads">
